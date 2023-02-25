@@ -40,11 +40,6 @@ table {
   border-collapse: collapse;
 }
 
-/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
-input, textarea {
-  -webkit-user-select: auto;
-}
-
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
   white-space: revert;
@@ -88,8 +83,6 @@ meter {
   -moz-user-modify: read-write;
   -webkit-user-modify: read-write;
   overflow-wrap: break-word;
-  -webkit-line-break: after-white-space;
-  -webkit-user-select: auto;
 }
 
 /* apply back the draggable feature - exist only in Chromium and Safari */
@@ -104,5 +97,61 @@ meter {
 
 header {
   height: 840px;
-  background: url(../images/header_bg.svg) no-repeat 100% 100% left;
+  width: 1920px;
+  background: url(../images/header_bg.png), url(../images/header_small.svg), linear-gradient(90deg, #C98A40 0% 64%, rgb(255, 255, 255) 64% 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0%, 0% 100%;
+}
+header .header_r_img {
+  width: 20vw;
+  position: absolute;
+}
+
+.logo {
+  display: flex;
+  flex-shrink: 0;
+  margin-left: 18.35vw;
+  padding-top: 26px;
+  align-items: center;
+}
+.logo .logo_img {
+  display: block;
+  margin-right: 16px;
+}
+.logo .logo_title {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.title {
+  margin-left: 18.35vw;
+}
+.title h1 {
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 74px;
+  line-height: 89px;
+  display: block;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  max-width: 35vw;
+}
+.title p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  word-wrap: break-word;
+  max-width: 30vw;
 }/*# sourceMappingURL=main.css.map */
