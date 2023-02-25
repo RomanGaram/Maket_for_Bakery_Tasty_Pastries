@@ -200,4 +200,53 @@ header .header_r_img {
   top: 261px;
   left: 213px;
   z-index: 0;
+}
+
+#how_we_work {
+  display: flex;
+  flex-flow: column;
+  flex-shrink: 0;
+  width: 100vw;
+  height: 840px;
+  background: url(../images/HWW/hww_bg.png), linear-gradient(90deg, rgb(255, 255, 255) 0% 36%, #C98A40 36% 100%);
+  background-repeat: no-repeat;
+}
+#how_we_work .hww_text {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin: 50px 240px 50px;
+}
+#how_we_work .hww_text .hww_text_descrp {
+  width: 277px;
+  height: 156px;
+  flex-shrink: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  color: #C98A40;
+}
+#how_we_work .hww_text .hww_text_title {
+  flex-shrink: 0;
+  font-family: "Sen";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 144px;
+  line-height: 96%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+#how_we_work .hww_img_block {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0 382px;
+}
+#how_we_work .hww_img_block .hww_pictures {
+  margin: 0 10px;
+}
+#how_we_work .hww_img_block .first {
+  margin-left: 0;
 }/*# sourceMappingURL=main.css.map */

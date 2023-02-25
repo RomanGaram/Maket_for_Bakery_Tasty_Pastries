@@ -13,7 +13,7 @@ header {
     url(../images/header_img_small.png),
     linear-gradient(90deg, 
      #C98A40 0% 64%, 
-    rgb(255, 255, 255)64% 100%),;
+    rgb(255, 255, 255)64% 100%);
     background-repeat: no-repeat;
     background-position: 100% 0%, 0% 100%;
     background-size:auto;
@@ -49,7 +49,6 @@ header {
             color: #FFFFFF;
             }
 }
-
 
 .wraper{
     display: flex;
@@ -110,4 +109,64 @@ header {
                     }
                 }
             }
+}
+
+// MAIN
+
+// HOW WE WORK SECTION
+
+#how_we_work{
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 840px;
+    background: url(../images/HWW/hww_bg.png),
+    linear-gradient(90deg, 
+     rgb(255, 255, 255) 0% 36%,
+     #C98A40 36% 100%);
+     background-repeat: no-repeat;
+
+     .hww_text{
+        display: flex;
+        flex-shrink: 0;
+        justify-content: space-around;
+        align-items: flex-end;
+        margin: 50px 240px 50px;
+        
+        .hww_text_descrp{
+            width: 277px;
+            height: 156px;
+            flex-shrink: 0;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 26px;
+            color: #C98A40;
+        }
+
+        .hww_text_title{
+            flex-shrink: 0;
+            font-family: 'Sen';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 144px;
+            line-height: 96%;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+     }
+    .hww_img_block{
+        display: flex;
+        flex-shrink: 0;
+        margin: 0 382px;
+        .hww_pictures{
+            margin: 0 10px;
+        }
+        .first{
+            margin-left: 0;
+        }
+    }
 }
