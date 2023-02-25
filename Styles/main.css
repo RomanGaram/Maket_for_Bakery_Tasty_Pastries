@@ -95,12 +95,24 @@ meter {
   all: revert;
 }
 
+button {
+  width: 194px;
+  height: 60px;
+  background: #FDBA10;
+  border-radius: 30px;
+  color: white;
+}
+
 header {
+  display: flex;
+  flex-flow: column;
+  flex-shrink: 0;
   height: 840px;
-  width: 1920px;
-  background: url(../images/header_bg.png), url(../images/header_small.svg), linear-gradient(90deg, #C98A40 0% 64%, rgb(255, 255, 255) 64% 100%);
+  width: 100vw;
+  background: url(../images/header_bg.png), url(../images/header_img_small.png), linear-gradient(90deg, #C98A40 0% 64%, rgb(255, 255, 255) 64% 100%);
   background-repeat: no-repeat;
   background-position: 100% 0%, 0% 100%;
+  background-size: auto;
 }
 header .header_r_img {
   width: 20vw;
@@ -130,10 +142,26 @@ header .header_r_img {
   color: #FFFFFF;
 }
 
-.title {
-  margin-left: 18.35vw;
+.wraper {
+  display: flex;
+  width: 100vw;
 }
-.title h1 {
+.wraper .title {
+  display: flex;
+  width: 64%;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.wraper .title .title-text {
+  display: block;
+  margin-left: 18.75vw;
+  max-width: 47%;
+  flex-shrink: 0;
+  z-index: 5;
+}
+.wraper .title .title-text h1 {
   font-family: "Sen";
   font-style: normal;
   font-weight: 800;
@@ -142,10 +170,11 @@ header .header_r_img {
   display: block;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 20px;
-  max-width: 35vw;
+  margin: 194px 0 20px;
+  max-width: 70%;
 }
-.title p {
+.wraper .title .title-text p {
+  display: block;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -153,5 +182,22 @@ header .header_r_img {
   line-height: 26px;
   color: #FFFFFF;
   word-wrap: break-word;
-  max-width: 30vw;
+  max-width: 59%;
+}
+.wraper .title .main_hd_img {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: -104px;
+  margin-left: -375px;
+  z-index: 4;
+}
+.wraper .title .main_hd_img::before {
+  content: url(../images/header_img_text.svg);
+  position: relative;
+  display: flex;
+  top: 261px;
+  left: 213px;
+  z-index: 0;
 }/*# sourceMappingURL=main.css.map */

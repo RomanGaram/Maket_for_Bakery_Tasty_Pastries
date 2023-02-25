@@ -4,20 +4,27 @@
 
 // HEADER SECTION
 header {
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
     height: 840px;
-    width: 1920px;
+    width: 100vw;
     background:  url(../images/header_bg.png),
-    url(../images/header_small.svg),
+    url(../images/header_img_small.png),
     linear-gradient(90deg, 
      #C98A40 0% 64%, 
     rgb(255, 255, 255)64% 100%),;
     background-repeat: no-repeat;
     background-position: 100% 0%, 0% 100%;
+    background-size:auto;
+
 
     .header_r_img{
         width: 20vw;
         position: absolute;
         }
+
+    
 }
 
 .logo{
@@ -43,28 +50,64 @@ header {
             }
 }
 
-.title{
-    margin-left: 18.35vw;
-        h1{
-            font-family: 'Sen';
-            font-style: normal;
-            font-weight: 800;
-            font-size: 74px;
-            line-height: 89px;
-            display: block;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            margin-bottom: 20px;
-            max-width: 35vw;
-        }
-        p{
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            line-height: 26px;
-            color: #FFFFFF;
-            word-wrap: break-word;
-            max-width: 30vw;
-        }
+
+.wraper{
+    display: flex;
+    width: 100vw;
+        
+        .title{
+            display: flex;
+            width: 64%;
+            width: fit-content;
+            flex-shrink: 0;
+            z-index: 2;
+            .title-text {
+                display: block;
+                margin-left: 18.75vw;
+                max-width: 47%;
+                flex-shrink: 0;
+                z-index: 5;
+                    h1{
+                        font-family: 'Sen';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 74px;
+                        line-height: 89px;
+                        display: block;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin: 194px 0 20px;
+                        max-width: 70%;
+                        
+                    }
+                    p{
+                        display: block;
+                        font-family: 'Poppins';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        word-wrap: break-word;
+                        max-width: 59%;
+                    }
+                }
+                .main_hd_img{
+                    width: fit-content;
+                    height: fit-content;
+                    margin-top: -104px;
+                    margin-left: -375px;
+                    z-index: 4;
+                
+                    &::before{
+                    content: url(../images/header_img_text.svg);
+                    position: relative;
+                    display: flex;
+                    // right: -200px;
+                    top: 261px;
+                    left: 213px;
+                    z-index: 0;
+                    }
+                }
+            }
 }
