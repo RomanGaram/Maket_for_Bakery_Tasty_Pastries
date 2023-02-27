@@ -3,7 +3,7 @@
 
 
 // HEADER SECTION
-header {
+.header_sec {
     display: flex;
     flex-flow: column;
     flex-shrink: 0;
@@ -17,20 +17,12 @@ header {
     background-repeat: no-repeat;
     background-position: 100% 0%, 0% 100%;
     background-size:auto;
-
-
-    .header_r_img{
-        width: 20vw;
-        position: absolute;
-        }
-
-    
 }
 
 .logo{
     display: flex;
     flex-shrink: 0;
-    margin-left: 18.35vw;
+    margin-left: 19.691vw;
     padding-top: 26px;
     align-items: center;
         .logo_img{
@@ -62,7 +54,7 @@ header {
             z-index: 2;
             .title-text {
                 display: block;
-                margin-left: 18.35vw;
+                margin-left: 19.691vw;
                 max-width: 47%;
                 flex-shrink: 0;
                 z-index: 5;
@@ -70,8 +62,8 @@ header {
                         font-family: 'Sen';
                         font-style: normal;
                         font-weight: 800;
-                        font-size: 74px;
-                        line-height: 89px;
+                        font-size: 3.814vw;
+                        line-height: 4.588vw;
                         display: block;
                         text-transform: uppercase;
                         color: #FFFFFF;
@@ -84,15 +76,15 @@ header {
                         font-family: 'Poppins';
                         font-style: normal;
                         font-weight: 600;
-                        font-size: 18px;
-                        line-height: 26px;
+                        font-size: 0.928vw;
+                        line-height: 1.340vw;
                         color: #FFFFFF;
                         word-wrap: break-word;
                         max-width: 59%;
                     }
                 }
                 .main_hd_img{
-                    width: fit-content;
+                    width: 34.330vw;
                     height: fit-content;
                     margin-top: -104px;
                     margin-left: -375px;
@@ -102,7 +94,7 @@ header {
                     content: url(../images/header_img_text.svg);
                     position: relative;
                     display: flex;
-                    // right: -200px;
+                    width: 24.021vw;
                     top: 261px;
                     left: 213px;
                     z-index: 0;
@@ -130,19 +122,18 @@ header {
      .hww_text{
         display: flex;
         flex-shrink: 0;
-        justify-content: space-between;
         align-items: flex-end;
-        margin: 50px 18.35vw 50px;
+        margin: 2.577vw 19.691vw 2.577vw;
         
         .hww_text_descrp{
             width: 28%;
-            padding: 0 23px;
+            padding: 0 23px 0 0;
             flex-shrink: 0;
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 0.928vw;
+            line-height: 1.340vw;
             color: #C98A40;
         }
 
@@ -151,19 +142,22 @@ header {
             font-family: 'Sen';
             font-style: normal;
             font-weight: 800;
-            font-size: 144px;
+            font-size: 7.423vw;
             line-height: 96%;
             text-transform: uppercase;
             color: #FFFFFF;
+            width: 32.474vw;
+            text-align: end;
+            margin-left: 13.557vw;
         }
 
      }
     .hww_img_block{
         display: flex;
         flex-shrink: 0;
-        margin: 0 18.35vw;
+        margin: 0 19.691vw;
         .hww_pictures{
-            margin: 0 10px;
+            margin: 0 0.515vw;
         }
         .first{
             margin-left: 0;
@@ -186,28 +180,223 @@ header {
         display: flex;
         flex-flow: column;
         flex-shrink: 0;
-        width: 27%;
-        margin: 50px 2.5vw 0 18.35vw;
+        width: min-content;
+        margin: 2.577vw 2.577vw 0 18.35vw;
         .aus_text_title{
             font-family: 'Sen';
             font-style: normal;
             font-weight: 800;
-            font-size: 144px;
+            font-size: 7.423vw;
             line-height: 96%;
             text-transform: uppercase;
             color: #FFFFFF;
-            margin-bottom: 50px;
+            margin-bottom: 2.577vw;
+            width: 26.186vw;
         }
         .aus_text_descrp{
             font-family: 'Poppins';
             font-style: normal;
             font-weight: 600;
-            font-size: 18px;
-            line-height: 26px;
+            font-size: 0.928vw;
+            line-height: 1.340vw;
             color: #FFFFFF;
         }
     }
     .aus_img{
-        margin-top: 50px;
+        margin-top: 2.577vw;
+        max-width: 33.093vw;
+    }
+}
+
+// SERVICES
+
+#services{
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 910px;
+    .services_title{
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7.423vw;
+        line-height: 96%;
+        text-transform: uppercase;
+        color: #C98A40;
+        text-align: center;
+        margin: 58px auto 50px;
+    }
+    .services_cards{
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        .card{
+            background: #FFFFFF;
+            border: 1px solid #FFD8AB;
+            border-radius: 30px;
+            width: 19.845vw;
+            margin: 0 11px;
+            h3{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 0.825vw;
+                line-height: 1.237vw;
+                color: #C98A40;
+                margin: 30px 30px 10px;
+            }
+            p{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.722vw;
+                line-height: 1.031vw;
+                color: #333333;
+                margin: 0 30px 30px;
+            }
+
+        }
+    }
+}
+
+// TESTYMONIALS
+
+#testymonials{
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 898px;
+    background: #C98A40;
+    .testymonials_title{
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7.423vw;
+        line-height: 96%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: 86px auto 80px;
+        flex-shrink: 0;
+    }
+    .feedbacks{
+        display: flex;
+        flex-shrink: 0;
+        flex-flow: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        align-content: space-between;
+        max-width: 59.381vw;
+        margin: 0 auto;
+    }
+    .feedbacks_card{
+        max-width: 45%;
+        background: #FFFFFF;
+        border-radius: 30px;
+        margin-bottom: 2.577vw;
+    }
+    h3{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 0.825vw;
+        line-height: 1.237vw;
+        color: #C98A40;
+        margin: 20px auto 10px 50px;
+    }
+    p{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.722vw;
+        line-height: 1.031vw;
+        color: #333333;
+        margin: 0 50px 20px;
+    }
+    img{
+        margin: 0 0 20px 50px;
+    }
+}
+
+// CONTACT US SECTION
+
+#contact_us{
+    width: 100vw;
+    height: 554px;
+    display: flex;
+    flex-flow: column;
+    flex-shrink: 0;
+    .cu_title{
+        font-family: 'Sen';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 7.423vw;
+        line-height: 96%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #C98A40;
+        margin: 50px auto;
+    }
+    .cu_wraper{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        flex-shrink: 0;
+        margin: 0 auto;
+        .cu_forms{
+            display: flex;
+            flex-flow: column;
+            flex-shrink: 0;
+            align-items: center;
+            input{
+            width: 374px;
+            height: 56px;
+            background: #FFD39F;
+            border-radius: 61px;
+            margin-bottom: 14px;
+            padding-left: 20px;
+            }
+            .contactme{
+            width: 168px;
+            height: 56px;    
+            border: 3px solid #C98A40;
+            background: #FFFFFF;
+            border-radius: 61px;
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 24px;
+            color: #C98A40;
+            padding: 0;
+            }
+            .cu_forms_btn{
+                width: 168px;
+                height: 56px;
+            }
+            .cu_forms_btn:hover .contactme{
+            cursor: pointer;
+            background: #C98A40;
+            color: #FFFFFF;
+            }            
+        }
+        .cu_data{
+            display: flex;
+            flex-flow: column;
+            flex-shrink: 0;
+            margin-left: 100px;
+            .cu_data_item{
+                display: flex;
+                height: 24px;
+                margin-bottom: 30px;
+                p{
+                    margin-left: 20px; 
+                }
+            }
+        }
     }
 }
